@@ -23,15 +23,17 @@
         var n = Number(prompt('请输入数字n'));
 
         //遍历
-        for (var i = 1; i = n; i++) {
+        for (var i = 1; i <= n; i++) {
             // 要先制作出这一项，这一项怎么制作 ? 要使用累乘器。item就是小车厢。
-            item = i / (2 * i + 1);
+            item *= i / (2 * i + 1);
             // console.log (item);
             //把车厢往累加器中累加
             sum += item;
-            //显示结果
-            alert((1 + sum) * 2);
+
         }
+
+        //显示结果
+        alert((1 + sum) * 2);
     </script>
 </body>
 
