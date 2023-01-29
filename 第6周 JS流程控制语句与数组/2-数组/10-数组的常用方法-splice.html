@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //var arr = [0，1, 2，3，4，5]; 
+        // arr.splice(3，2，66，77，88, 99);  //第一个数字代表从第几个数字后插入，
+        // console.log(arr);  //2 66 77 88 99 3 4 5    
+        //第二个数字表示从要插入的地方之后的第一个数字开始，删除多少数字
+        //********************************
+        //var arr = [0，1，2，3，4，5]; 
+        // arr.splice(2，0，44，55, 66, 77); 
+        // console.log(arr);
+
+        //**************************
+        //var arr =['苹果"，‘鸭梨"，"西瓜'，"水蜜桃'];
+        // arr.splice(2，1);
+        //console.log(arr);
+        //**************************
+        var arr = [0, 1, 2, 3, 4, 5];
+        var items = arr.splice(3, 2, 66, 77, 88, 99);
+        console.log(arr);   //[0, 1, 2, 66, 77, 88, 99, 5]
+        console.log(items);   //[3, 4]
+
+
+    </script>
+</body>
+
+</html>
